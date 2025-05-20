@@ -1,0 +1,173 @@
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>List Harga Jasa Suntik Akun Sosmed</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f4f7ff;
+        margin: 0;
+        padding: 2rem;
+        color: #333;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        padding: 2rem 3rem;
+    }
+    h1 {
+        text-align: center;
+        color: #3a66ff;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    p.subtitle {
+        text-align: center;
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.1rem;
+    }
+    thead {
+        background: #3a66ff;
+        color: white;
+        font-weight: 600;
+    }
+    th, td {
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #e1e5f1;
+    }
+    tbody tr:hover {
+        background-color: #f0f4ff;
+        
+    }
+    td.price {
+        font-weight: 600;
+        color: #3a66ff;
+        text-align: right;
+    }
+    footer {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #888;
+    }
+    @media (max-width: 600px) {
+        .container {
+            padding: 1.5rem 1rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+        }
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        thead tr {
+            display: none;
+        }
+        tbody tr {
+            margin-bottom: 1rem;
+            background: #f9faff;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+        tbody td {
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+        tbody td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 20px;
+            width: 45%;
+            padding-left: 0;
+            font-weight: 600;
+            text-align: left;
+            color: #3a66ff;
+        }
+        td.price {
+            text-align: right;
+        }
+    }
+    
+    .ketentuan-box {
+  max-width: 90%;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+
+.ketentuan-box h2 {
+    color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ketentuan-box ul {
+  padding-left: 20px;
+}
+
+.ketentuan-box li {
+    
+  margin-bottom: 8px;
+  font-size: 1,5rem;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>List Harga Jasa Suntik Akun Sosmed</h1>
+    <p class="subtitle">Harga jasa suntik berbagai akun media sosial populer dengan kualitas terbaik.</p>
+   <div id="myDiv">
+     <table>
+        <thead>
+            <tr>
+                <th>Layanan</th>
+                <th>Deskripsi</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Layanan">Suntik akun sosial media tepercaya</td>
+                <td data-label="Deskripsi">Penambahan followers aktif dan asli untuk akun Instagram</td>
+                <td class="price" data-label="Harga">Mulai dari Rp 3,000 an</td>
+            </tr>
+        </tbody>
+      </table>
+      
+    </div>
+<div class="ketentuan-box">
+  <h2>Informasi</h2>
+  <ul>
+    <li>Untuk yang ingin membeli suntik akun sosial media, diharapkan (public)</li>
+    <li>Setelah pembayaran, produk akan dikirim dalam waktu sesuai penyuntikan.</li>
+    <li>Tidak ada refund untuk kesalahan input.</li>
+    <li>Hubungi admin jika ada kendala teknis.</li>
+        <li>Untuk pengguna instagram jika ingin di suntik di mohon untuk nonaktifkan (laporan di tinjau)</li>
+  </ul>
+</div>
+    <footer>Hubungi kami untuk pemesanan dan informasi lebih lanjut.</footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
