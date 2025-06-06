@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/css-topup.css">
+  <title></title>
+</head>
+
+<body>
+  
+   <header class="simple-header">
+   <h1>Diamond Top up</h1>
+   <div class="simple-role-box">
+     <span class="simple-role">Role: Buyer</span>
+     <a href="../index.html" class="back-btn">Kembali</a>
+   </div>
+ </header>
+
+<main class="topup-container">
+  <div class="idGame">
+    <input type="text" id="searchInput" placeholder=" Search for your game." />
+  </div>
+ <h2 class="topup-title">Daftar Game yg Tersedia</h2>
+  <div class="topup-grid">
+<div id="gm-ff" class="topup-item">
+  <a href="topup-topup-ff.html">
+    <img src="https://iili.io/FJXUb8G.th.jpg" alt="ff">
+    <p class="game-name">Free Fire</p>
+  </a>
+</div>
+<div id="gm-ml" class="topup-item">
+  <a href="topup-topup-ml.html.">
+    <img src="https://iili.io/FJXUtFn.th.jpg" alt="ml">
+    <p class="game-name">cooming soon</p>
+  </a>
+</div>
+<div id="gm-pubg" class="topup-item">
+  <a href="topup-topup-pubg.html.">
+    <img src="https://iili.io/FJXUp9f.th.jpg" alt="pubg">
+    <p class="game-name">cooming soon</p>
+  </a>
+</div>
+  </div>
+</main>
+</body>
+<script>
+  function cariGame() {
+    const input = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+    const gameMap = {
+      'ff': 'gm-ff',
+      'freefire': 'gm-ff',
+      'burik': 'gm-ff',
+      'free fire': 'gm-ff',
+      'game bocil': 'gm-ff',
+      'api gratis': 'gm-ff',
+      'game gak ada pintu': 'gm-ff',
+            'ml': 'gm-ml',
+      'mobile legends': 'gm-ml',
+      'analog': 'gm-ml',
+            'pubg': 'gm-ml',
+      'game haram': 'gm-pubg',
+      'pubg mobile': 'gm-pubg',
+      'haram': 'gm-pubg',
+      'mati keluar asap': 'gm-pubg',
+    };
+    
+    const idTarget = gameMap[input];
+    if (idTarget) {
+      const target = document.getElementById(idTarget);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.style.boxShadow = '0 0 10px 3px blue';
+        setTimeout(() => {
+          target.style.boxShadow = '';
+        }, 2000);
+      }
+    } else {
+      alert('Game tidak ditemukan.');
+    }
+  }
+
+  // Tambahkan fitur tekan Enter untuk mencari
+  document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      cariGame();
+    }
+  });
+</script>
+</html> 
